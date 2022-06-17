@@ -1,0 +1,37 @@
+
+*{
+  margin: 0; /*Distância do corpo com o resto do escopo*/
+  padding: 0; /*Distância*/
+  box-sizing: border-box; /*Especifica a altura e a largura como borda de caixa*/
+  font-family: "Poppins", sans-serif; /*Fonte geral do site e fonte reserva caso a primeira não carregue*/
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #8e44ad, #4361EE); /*Torna plano de fundo linear, com duas cores e graus de posição*/
+  height: 100vh; /*Altura*/
+  overflow: hidden; /*Especifica o tamanho do corte ou tipo de conteúdos que transbordam de seu fundo*/
+}
+
+.center{
+  position: absolute; /*Define posição*/
+  top: 50%; /*Define distância do topo*/
+  left: 50%; /*Define distância da esquerda*/
+  transform: translate(-50%, -50%);/*Posicionamento de distância X ( Valores positivos da esquerda, valores negativos da direita) e Y (valores positivos de cima e valores negativos de baixo)*/
+  width: 500px; /*Define largura*/
+  height: 500px;/*Define altura*/
+  background: linear-gradient(120deg, white, lightcyan);
+  border-radius: 10px; /*Define arredondamento da borda*/
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.25);/*Define sombra da caixa do conteúdo (fundo), com distância baixo-direita e nível de sombra, além da cor*/
+}
+
+h1{
+    text-align: center; /*Alinha texto*/
+    color: black; /*Define cor do texto*/
+    text-decoration: underline; /*Define decoração do texto, como sublinhado, negrito, itálico etc*/
+    text-shadow: 2px 2px 3px 3; /*Define sombra do texto, com regras de somra iguais a de box-shadow*/
+    margin-bottom: 4px; /*Distância da margem especificando a que fica abaixo do corpo*/
+}
+
+
