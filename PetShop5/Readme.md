@@ -37,3 +37,5 @@ pasta valida-
 
 pags-
 - cliente.logged 
+
+-Testando atualização de mudanças! Apareceu para vocês?
