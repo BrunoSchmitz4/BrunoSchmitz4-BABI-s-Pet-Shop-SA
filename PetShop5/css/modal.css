@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex; /*Flexbox (dispensável) que define o tipo da caixa*/
+	  min-height: 100vh; /*Define altura mínima*/
+	  flex-direction: column; /*Flexbox Define a linha principal do eixo (dispensável)*/
+    margin: 0;
+    font-family: monospace;
+	  font-size: 16px; /*Define tamanho da fonte*/
+    background: linear-gradient(68.15deg, #AA6B5B 16.62%, #6E6361 85.61%);
+    /*background: linear-gradient(120deg,#2980b9, #8e44ad); Versão Azul / Violeta*/
+}
+input[type=submit]{
+  color:#000;
+  background-color: #AA9181; /* #472e29*/
+  border: none;
+  padding: 2px;
+  text-align: right;
+}
+input[type=submit]:hover{
+  box-shadow: 2px 2px 4px black;
+  transition: 0.5;
+}
+
+input[type=file]{
+  color:#000;
+  background-color: #BE7E70;
+  border: none;
+  padding: 2px;
+}
+input[type=file]:hover{
+  box-shadow: 2px 2px 4px black;
+  transition: 0.5s;
+}
+
+.txt_field input, select{ /* personaliza botões cadastrar usuários */
+  background-color: #BE7E70;
+}
+
+.btn btn-sm btn{
+  background-color: green;
+}
+
+.modal-body{
+  background-color: #97685C;
+
+}
+.mod1_ta{
+  background-color: #c28778;
+  margin: 0 30% 0 30%;
+  color: black;
+  border: none;
+}
+
+.mod1_ta::placeholder{
+  color: black;
+}
+.mod1_ta:hover{
+  border-style: solid;
+  background-color: #BE7E70;
+  border-color: #472e29;
+  box-shadow: 2px 2px 2px  #2F2325;
+  transition: 0.5s;
+}
+.cad2_in{
+  align-self: center;
+  margin-left: 30px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;/*Flexbox (dispensável) que define o alinhamento dos itens no eixo principal*/
+    justify-content: space-around; /*Justifica conteúdo no eixo principal (dispensável)*/
+    padding: 10px;
+    background: linear-gradient(68.15deg, #AB9177 16.62%, #8E5D52 85.61%); /* #6A5442 */
+}
+
+.lbl_is{
+  margin-bottom: 25px;
+}
+
+.cabecalho_imagem{
+    height: 72px;
+    padding-bottom: 10px; /*Distância do conteúdo com relação a seu fundo, especificando para baixo*/
+}
+
+.cabecalho_menu{
+    display: flex;
+    column-gap: 32px; /*Flexbox (dispensável) quebra de conteúdo automática para próxima coluna*/
+}
+
+.cabecalho_menu_item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400; /*Define intensidade da fonte, como o negrito (dispensável)*/
+    font-size: 18px; /*Define tamanho da fonte*/
+}e
+
+.cabecalho_menu_item{
+    margin: 5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer; /*Define o tipo de cursor quando o mesmo paira sobre objeto com esta classe*/
+}
+.cabecalho_menu_item:hover{/*Define animação de ponteiro do mouse em cima do conteúdo/item com esta classe*/
+    border-style: solid; /*Define estilo da borda*/
+    border-color: white; /*Define cor da borda*/
+    border-radius: 20px;
+    
+    margin: 5px 0 20px 5px;
+    padding: 5px;
+    
+    text-decoration: none;
+    text-shadow: 2px 2px 10px #ECD6C4;
+    color: white;
+    
+    box-shadow: 2px 2px 10px #ECD6C4;
+    transition: .3s; /*Define velocidade de transição da animação em segundos*/
+}
+.cabecalho_menu_item[type="submit"]{ /*Itens que sejam do tipo submikt*/
+  width: 100%; /*Largura*/
+  height: 50px; /*Altura*/
+  border: 1px solid; /*Define expessura e tipo de borda*/
+  background: #2691d9; /*Define cor da borda*/
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none; /*Impede que o navegador adicione efeitos indesejados em textos do tipo submit*/
+}
+
+.cl-log{
+    font-family: 'Sarala', 'Sans-Serif';
+    color: white;
+    text-shadow: 2px 2px 3px #6E6361; /* configura sublinhado embaixo do bem vindo(a) #a6a6a6 */
+    font-size: 18px;
+    text-decoration: underline #a6a6a6; /* #472e29 */
+}
+
+/*Dispensável, tudo flexbox*/
+.caixa-botoes{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  flex: 1;
+
+}
+.btn-btn-primary{
+    border-style: none;
+    border-radius: 4px;
+
+    margin: 5px 5px;
+
+    background-color: #AB9177; /* define a cor dos botões modais #8E5D52 */
+    box-shadow: 1px 1px 10px #2F2325;
+    /* color: #38211F; */
+    height: 50px;
+    width: 200px;
+    
+}
+
+.btn-btn-primary:hover{
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+
+    text-decoration: none;
+    text-shadow: 2px 2px 10px #ECD6C4;
+    color: white;
+    
+    box-shadow: 2px 2px 10px #ECD6C4;
+    transition: .3s;
+}
+.btn-btn-primary[type="submit"]{
+  width: 400%;
+  height: 50px;
+
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.table_users{
+  display: flex;
+	flex-direction: column;
+	flex: 5;
+  border-style: solid, black;
+  margin-left: 50vh;
+  margin-top: -30vh;
+  margin-bottom: 30vh;
+}
+
+.table-cel{
+  background-color: #be7e70;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+}
+
+.table-cel-btex{
+  background-color: #be7e70;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+}
+.table-cel-bted{
+  background-color: #be7e70;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+}
+
+.table_content{
+  background-color: #f3f3f3;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+}
+
+
+.modal {
+ background-size: 35% 400px 35% 400px;
+}
+.table-servs{
+  margin: -400px -800px;
+}
